@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:bisque ;
+            background-image: url(jeger.png);
+            background-repeat: no-repeat;
+            background-size: 30%;
+            background-position: center;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            background-color: burlywood;
+            border: 4px dashed antiquewhite;
+            
+        }
+        .container h1{
+            text-align: center;
+            padding: 10px;
+        }
+        .poruka h3{
+            margin-left: 80px;
+        }
+        .poruka p{
+            margin-left: 250px;
+            margin-bottom: 30px;
+        }
+        .promo h2{
+            width: 18%;
+            background-color: burlywood;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border: 4px dashed antiquewhite;  
+            text-align: center;
+        }
+        .promo h3{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        ul li{
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            list-style: none;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            display:block;
+            padding:5px
+           
+        }
+        li{
+            display:inline-block;
+            width:100px;
+            background-color: brown;
+            text-align: center;
+           
+
+        }
+        ul li ul{
+            display:none;
+        }
+        ul li:hover {
+           
+            background-color: goldenrod;
+            background-position: 0px 10px;
+        }
+        a:hover{
+            color:hotpink
+        }
+        ul li{
+            position: relative;
+            background-image: url(slije/arrow-right.png);
+            background-repeat: no-repeat;
+            background-position: 0px 10px;
+        }
+        ul li:hover ul{
+            display:block;
+            position: absolute;
+        }    
+        .table_component {
+            overflow: auto;
+            width: 70%;
+        }
+        
+        .table_component table {
+            border: 3px dashed #deb887;
+            height: 70%;
+            width: 70%;
+            table-layout: fixed;
+            border-collapse: separate;
+            border-spacing: 15px;
+            text-align: left;
+        }
+        
+        .table_component caption {
+            caption-side: top;
+            text-align: left;
+        }
+        
+        .table_component th {
+            border: 3px dashed #deb887;
+            background-color: #ffe4c4;
+            color: #000000;
+            padding: 15px;
+        }
+        
+        .table_component td {
+            border: 3px dashed #deb887;
+            padding: 15px;
+        }
+        
+        .table_component tr:nth-child(even) td {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .table_component tr:nth-child(odd) td {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        @media (max-width: 600px) {
+    
+    nav ul li {
+      width: 75%;
+      padding: 10px;
+      display: block;
+    }
+    body {
+        background-size: 80%;
+        background-position: top center;
+    }
+
+    ul li {
+        display: block;
+        width: 100%;
+        background-position: 10px 10px;
+        padding-left: 30px;
+    }
+
+    ul li ul {
+        position: static;
+    }
+
+    .promo, .petak {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 160%;
+        box-sizing: border-box;
+    }
+
+    .table_component {
+        overflow-x: scroll;
+    }
+
+    .table_component table {
+        border-spacing: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Caffe bar "Kod Heraka"</h1>
+    </div>
+    <div class="container">
+
+      <nav>
+  
+          <ul>
+              <li><a href="">o nama</a></li>
+              <li><a href="">rezervacija</a>
+                  <ul>
+                      <li><a href="">auslender</a></li>
+                      <li><a href="">luda subota</a></li>
+                      <li><a href="">poslje mise</a></li>
+                  </ul>
+              </li>
+              <li><a href="">karijere</a></li>
+              <li><a href="">kontakt</a>
+                  <ul>
+                      <li><a href="">email</a></li>
+                      <li><a href="">broj telefona</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+  </div>
+<div class="poruka">
+    <h3>Osjećaj se ko kod kuće prijatelju"</h3>
+    <p>Dominik Herak</p>
+</div>
+<div class="promo">
+<h2>Promotivna ponuda</h2>
+<h3>"Bezobrazno niske cijene srijedom"</h3>
+<ul>
+    <li>Jeger + Kava 4e</li>
+    <li>Pelin + kava 3.50e</li>
+    <li>Gusti + kava 4e</li>
+    <li>Mineralna + kava 2.5e</li>
+</ul>
+
+<div class="petak">
+    <h2>Auslender se vraća kući</h2>
+    <h3>Muzika, zgodna konobarica i masovna tuča</h3>
+    <h3>petkom "kod Heraka" sve je dozvoljeno</h3>
+    <ul>
+        <li>Litra + voda 14e</li>
+        <li>Ožujsko 0.5 2.9e</li>
+        <li>Ljuta domaća trava 1e</li>
+    </ul>
+        <div class="table_component" role="region" tabindex="0">
+        <table>
+            <caption>
+                <h2>Cjenik</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Pića</th>
+                    <th>Cijena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Espresso</td>
+                    <td>1,7 e</td>
+                </tr>
+                <tr>
+                    <td>Kava s mlijekom</td>
+                    <td>1,9 e</td>
+                </tr>
+                <tr>
+                    <td>Jamnica (mineralna)</td>
+                    <td>1,9 e</td>
+                </tr>
+                <tr>
+                    <td>Coca-cola</td>
+                    <td>2,3 e<br></td>
+                </tr>
+                <tr>
+                    <td>Fanta</td>
+                    <td>2,3 e</td>
+                </tr>
+                <tr>
+                    <td>Sprite</td>
+                    <td>2,3 e<br></td>
+                </tr>
+                <tr>
+                    <td>Čaj s medom</td>
+                    <td>2 e</td>
+                </tr>
+                <tr>
+                    <td>Gemišt&nbsp;</td>
+                    <td>2 e</td>
+                </tr>
+                <tr>
+                    <td>Pelinkovac</td>
+                    <td>2,4 e</td>
+                </tr>
+                <tr>
+                    <td>Jeagermeister</td>
+                    <td>2,7 e</td>
+                </tr>
+                <tr>
+                    <td>Vodka</td>
+                    <td>2,2 e</td>
+                </tr>
+                <tr>
+                    <td>Rakija domaća</td>
+                    <td>2 e</td>
+                </tr>
+                <tr>
+                    <td>Crno vino</td>
+                    <td>2,3 e</td>
+                </tr>
+                <tr>
+                    <td>Ožujsko (0.5)</td>
+                    <td>2,9 e</td>
+                </tr>
+                <tr>
+                    <td>Karlovačko</td>
+                    <td>2,8 e</td>
+                </tr>
+                <tr>
+                    <td>Kraft piva</td>
+                    <td>3 e</td>
+                </tr>
+                <tr>
+                    <td>Budweiser</td>
+                    <td>3,4 e</td>
+                </tr>
+                <tr>
+                    <td>StaroČeško</td>
+                    <td>2,5 e</td>
+                </tr>
+                <tr>
+                    <td>Paulaner</td>
+                    <td>2,9 e</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+</body>
+</html>
